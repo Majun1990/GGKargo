@@ -1,1 +1,23 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+
+body {
+  background: image_url('gravel.png');
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+.navbar {
+  font-family: 'Ultra', serif;
+  font-size: 20px;
+  font-weight: 100;
+  background: image_url('starring.png');
+  box-shadow: 3px 1px 3px #2a2a2a;
+  color: #E2ECF6;
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Ultra', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #DE781F;
+}
