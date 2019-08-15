@@ -1,0 +1,11 @@
+<div class="booyah-box col-10 offset-1">
+  <br/>
+  <h1><%= @shipper.name %></h1>
+      <h2>
+        <%= @shipper.address %>
+        <%= @shipper.phone_number %>
+        <%= @shipper.email %>
+      </h2>
+  <br/>
+  <%= link_to "Home", shippers_path, class: "btn btn-primary" %>
+</div>
