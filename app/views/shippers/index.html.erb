@@ -1,10 +1,9 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center">List of Customers</h1>
-    <<% @shippers.each do |shipper| %>
-      <h2><%= shipper.name %>
-      <%= link_to 'More Info', shipper_path(@shipper) %></h2>
+    <% @shippers.each do |shipper| %>
+      <h2><%= shipper.name %></h2>
+      <%= link_to 'More Info', shipper_path(@shipper) %>
     <% end %>
-
   <div class="float-right">
     <%= link_to 'New Customer', new_shipper_path(@shipper), class: 'btn btn-primary' %>
   </div>

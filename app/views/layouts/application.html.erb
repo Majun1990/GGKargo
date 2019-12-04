@@ -15,14 +15,23 @@
        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">GGKargo</a>
+        <a class="navbar-brand" href="/">GGKargo</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link"><%= link_to 'About Us', about_path %></a>
           </li>
+          &nbsp
+          &nbsp
          <li class="nav-item">
-           <a class="nav-link" href="#">Resources</a>
+           <a class="nav-link"><%= link_to 'Resources', resources_path %></a>
          </li>
+         &nbsp
+         &nbsp
+        <li class="nav-item">
+           <a class="nav-link"><%= link_to 'FAQ', faq_path %></a>
+         </li>
+         &nbsp
+         &nbsp
          <li class="nav-item">
            <a class="nav-link" href="#">Contact Us</a>
          </li>
