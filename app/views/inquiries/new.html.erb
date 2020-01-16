@@ -1,0 +1,11 @@
+<div class="booyah-box col-8 offset-2">
+  <%= simple_form_for @inquiry do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :phone_number %>
+    <%= f.input :email_address %>
+    <%= f.input :comment%>
+    <br/>
+    <%= f.submit 'Submit' %>
+    <% end %>
+</div>
