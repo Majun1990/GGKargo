@@ -3,8 +3,8 @@ class NotificationMailer < ApplicationMailer
 
   def inquiry_added(inquiry)
     @inquiry = inquiry
-    
-    mail(to: "webmajunvanderbilt@gmail.com",
+
+    mail(to: "GGKargoLLC@gmail.com",
       subject: "new inquiry")
   end
 end
