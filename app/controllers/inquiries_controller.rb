@@ -1,6 +1,6 @@
 class InquiriesController < ApplicationController
   def index
-    @inquiry = Inquiry.last
+    @inquiries = Inquiry.order('created_at DESC')
   end
   
   def new

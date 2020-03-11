@@ -1,8 +1,11 @@
 <div class="booyah-box col-8 offset-2">
-  <h1>Last Inquiry</h1>
-    <h3>First Name:<%= @inquiry.first_name %></h3>
-    <h3>Last Name: <%= @inquiry.last_name %></h3>
-    <h3>Phone Number: <%= @inquiry.phone_number %></h3>
-    <h3>Email: <%= @inquiry.email_address %></h3>
-    <h3>Comment: <%= @inquiry.comment %></h3>
+  <h1>Inquiries</h1>
+    <% @inquiries.each do |inquiry| %>
+    <h3>First Name:<%= inquiry.first_name %></h3>
+    <h3>Last Name: <%= inquiry.last_name %></h3>
+    <h3>Phone Number: <%= inquiry.phone_number %></h3>
+    <h3>Email: <%= inquiry.email_address %></h3>
+    <h3>Comment: <%= inquiry.comment %></h3>
+    <br><br>
+    <% end %>
 </div>
